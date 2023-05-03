@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cormorant Garamond', serif;
+  /*font-family: 'Playfair Display', serif;*/
+}
+
+header {
+  background-color: rgb(4,102,225);
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  height :130px;
+  min-width: 1200px;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  position: absolute;
+  top: 40px;
+  left: 130px;
+  font-size: 3em;
+}
+
+header div img{
+  width: 110px;
+  height: 110px;
+  margin: 10px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+
+  position: absolute;
+  bottom: 0;
+  right: 3%;
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+  text-align: center;
+  display: inline-block;
+}
+
+nav a {
+  white-space: nowrap;
+  font-size: 22px;
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: rgba(160, 238, 255, 0.5);
+  transition: 0.3s;
+}
+
+main {
+  height: 2000px;
+}
+
+#slidesContainer {
+  position: relative;
+}
+
+.mainbackgroundimg 
+{
+  width: 1200px;
+  height: 705px;
+  margin :20px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.mainbackgroundimg.active {
+  opacity: 1;
+}
+
+
+div.slideshowinfo p{
+  font-family: 'Cabin', sans-serif;
+  width: 400px;
+  height: fit-content;
+  margin: 10px 50px;
+  padding: 65px;
+  background-color: rgba(130, 208, 255, 0.8);
+  background-repeat: no-repeat;
+  border-radius: 40% 0;
+  position: absolute;
+  top : 40px;
+  left: 40px;
+}
+
+#moreinfolist {
+  background: radial-gradient(ellipse at top, #00bcd4, transparent),
+            radial-gradient(ellipse at bottom, #4caf50, transparent);
+  position: absolute;
+  top: 950px;
+  width: 100%;
+  height:600px;
+  padding: 0;
+  color: #ffffff;
+  min-width: 1200px;
+}
+
+#moreinfolist p{
+  width : calc(30%);
+  height: 350px;
+  margin: 1.5%;
+  padding: 10px 20px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 150px;
+  text-align: center;
+  float :left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+#moreinfolist button{
+  width : 300px;
+  height: 80px;
+  padding: 10px 20px;
+  background: rgb(130, 208, 255);
+  border-radius: 100px;
+  border-color: #ffffff;
+  border-width: 0;
+  text-align: center;
+  font-size: 28px;
+  margin: 70px calc(50% - 300px/2) 0  calc(50% - 300px/2);
+}
+
+#socialsContainer {
+  background: linear-gradient(rgba(255,255,255,0.4),rgba(0,0,0,0.4));
+  position: absolute;
+  top: 1600px;
+  width: 100%;
+  height:320px;
+  color: #ffffff;
+  padding: 100px;
+}
+
+#socialsContainer button {
+  width:280px;
+  height:180px;
+  margin: 0 70px;
+}
+
+#contantMSG {
+  font-size: 20px;
+}
+
+#contantMSG .datafield input {
+  width: 400px;
+}
+
+#contantMSG  button {
+  width: 400px;
+  margin: 20px;
+}
+
+footer {
+  font-family: 'Cabin', sans-serif;
+  background-color: rgb(130, 208, 255);
+  color: #ffffff;
+  text-align: center;
+  height: 500px;
+  min-width: 1200px;
+}

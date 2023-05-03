@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="P.D Media">
+		<meta name="keywords" content="PD Media">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="style.css">
+
+		<title>PD Media</title>
+	</head>
+
+	<body>
+		<script src="frontend.js"></script>
+		<header>
+			<div>
+				<div><img src="ig_prof.jpg"></div>
+				<h1>PD Media</h1>
+			</div>
+			<div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="sociaMediaPlans.html">Social Media Plans</a></li>
+						<li><a href="shortMediaPlans.html">Short form marketing</a></li>
+						<li><a href="realEstateYachting.html">Real estate & Yachting</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<main style="height: 500px;">
+            <div>
+                
+                <p>Contact Us</p>
+                <p>Η επικοινωνία για εμάς είναι το πολυτιμότερο σε μία συνεργασία. Μαζί θα φτιάξουμε τον σχεδιασμό που θα μας οδηγήσει στην επιτυχία.</p>
+                <p>Το παν στην διαφήμιση που θα φέρει αποτελέσματα στην επιχείρηση σας είναι η εμπειρία και η άριστη γνώση και κατάρτιση του αντικειμένου.
+                    Μην αφήνετε την διαδικτυακή σας εικόνα στην τύχη της. Επενδύστε σε αυτή μαζί με εμάς για να κατακτήσουμε τους στόχους που θα θέσουμε μαζί.
+                    Η επικοινωνία μας βοηθά να καταλάβουμε τις ανάγκες σας και να διαμορφώσουμε ένα οικονομικό πλάνο με βάση το ποσό που είστε διατεθειμένοι εσείς
+                    οι ίδιοι να επενδύσετε για να σας φέρει κέρδη.
+                </p>
+                <p>Η εταιρεία μας δεν θα κοινοποιήσει τα προσωπικά στοιχεία που θα συμπληρώσετε στην φόρμα ενδιαφέροντος και θα τα χρησιμοποιήσει με μόνο σκοπό
+                    την επικοινωνία μαζί σας προκειμένου να σας ετοιμάσουμε ένα ακριβές πλάνο σύμφωνα με τις ανάγκες της επιχείρησης σας.
+                </p>
+
+                <form id="contantMSG" name="contantMSG" action="" method="post" onsubmit="">
+                    <div class="datafield">
+                        <label for="title">Your name : </label><br>
+                        <input type="text" name="title" maxlength="64" value=""/>
+                        <label for="title" id="errorTitle"></label>
+                    </div>
+            
+                    <div class="datafield">
+                        <label for="email">Email : </label><br>
+                        <input type="text" name="email" maxlength="100" value=""/>
+                        <label for="email" id="erroremail"></label>
+                    </div>
+            
+                    <div class="datafield">
+                        <label for="phoneNum">Phone number :</label><br>
+                        <input type="text" name="phoneNum" maxlength="14" value=""/>
+                        <label for="phoneNum" id="errorPhone"></label>
+                    </div>
+
+                    <div class="datafield">
+                        <label for="subject">Subject :</label><br>
+                        <input type="text" name="subject" maxlength="50" value=""/>
+                        <label for="subject" id="errorsubject"></label>
+                    </div>
+
+                    <div class="datafield">
+                        <label for="message">Your Message :</label><br>
+                        <input type="text" name="message" maxlength="200" value=""/>
+                        <label for="message" id="errormessage"></label>
+                    </div>
+
+                    <button name="submit" type="submit" id="updateInfo" value="Submit">Send message</button>
+                </form>
+            </div>
+		</main>
+		<footer>
+			<p>&copy; 2023 P.D Media All rights reserved.</p>
+			<p>Made by Bangg</p>
+
+			<nav>
+				<ul>
+					<li><a href="#">Social Media Plans</a></li>
+					<li><a href="#">Short form marketing</a></li>
+					<li><a href="#">Real estate & Yachting</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+
+		</footer>
+	</body>
+	
+</html>
